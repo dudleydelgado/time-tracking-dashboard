@@ -1,6 +1,5 @@
 import data from './data.json' assert {type: 'json'};
 
-console.log(data)
 
 let bgColors = [
 'hsl(15, 100%, 70%)',
@@ -15,9 +14,6 @@ let dailyArray = data.map(item => item.timeframes.daily)
 let weeklyArray = data.map(item => item.timeframes.weekly)
 let monthlyArray = data.map(item => item.timeframes.monthly)
 
-console.log(dailyArray)
-console.log(weeklyArray)
-console.log(monthlyArray)
 
 let dailyBtn = document.querySelector('#daily');
 let weeklyBtn = document.querySelector('#weekly');
@@ -49,9 +45,6 @@ function drawElements(array){
       if(titleLowerCase == 'self care'){
         titleLowerCase = 'self-care'
       }
-
-        console.log(title)
-        console.log(titleLowerCase)
 
         secondSection.innerHTML += `
         <div class="card">
